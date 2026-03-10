@@ -6,15 +6,17 @@ public class Student {
     String formatiedestudiu;
 
     Student ( int numarmatricolintrodus, String numeintrodus,String prenumeintrodus,String formatiedestudiuintrodus)
-    { numarMatricol=numarmatricolintrodus;
+    {
+        numarMatricol=numarmatricolintrodus;
         nume=numeintrodus;
         prenume=prenumeintrodus;
         formatiedestudiu=formatiedestudiuintrodus;
 
     }
 
-    public String toString(){
-        return("DATELE STUDENTILOR: "+"Numar matricol: "+numarMatricol+" , nume:"+nume+" , prenume:"+prenume+" , formatiedestudiu:"+formatiedestudiu);
+    public String toString()
+    {
+        return "DATELE STUDENTILOR: " + "Numar matricol: " + numarMatricol + " , nume:" + nume + " , prenume:" + prenume + " , formatiedestudiu:" + formatiedestudiu;
 
     }
 
