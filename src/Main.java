@@ -5,7 +5,7 @@ void main() {
 IO.print("Clasa da aceste date: ");
 IO.println();
 
- Student stud1= new Student( 527, "Botea", "Lavinia", "ISMzi");
+ Student stud1= new Student( 527, "Botea", "Lavinia", "ISM21/2");
  IO.println(stud1);
 
 }
