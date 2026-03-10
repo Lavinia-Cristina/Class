@@ -45,7 +45,23 @@ IO.println();
  IO.print(xPlusY);
 
 
+ IO.println();
+ IO.println();
+
+
+
  Set<Integer> zSet = new TreeSet(); //b
+ zSet.addAll(x);
+ zSet.addAll(y);
+
+ boolean containsElement = zSet.containsAll(x);
+ if(containsElement)
+ {IO.println(zSet);
+
+ }
+ IO.println();
+ IO.println();
+
  List<Integer> xMinusY = new ArrayList();//c
  int p = 4;
  List<Integer> xPlusYLimitedByP = new ArrayList(); //d
