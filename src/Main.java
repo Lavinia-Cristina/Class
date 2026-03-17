@@ -83,5 +83,36 @@ IO.println();
 
  //Partea Student
 
+ List<Student> studenti = new ArrayList<>();
+ studenti.add(new Student(101, "Popescu", "Ion", "TI21/1"));
+ studenti.add(new Student(120, "Popa", "Alis", "TI21/2")); // Studentul de la b)
+ studenti.add(new Student(105, "Ionescu", "Dan", "TI21/1"));
 
+
+ System.out.println("Lista de studenti:");
+ for (Student s : studenti) {
+  System.out.println(s);
+ }
+
+
+ Student cautat1 = new Student(120, "Popa", "Alis", "TI21/2");
+ Student cautat2 = new Student(112, "Popa", "Maria", "TI21/1");
+
+ System.out.println("Rezultate cautare:");
+ System.out.println("Alis Popa este in lista? " + verificaStudent(studenti, cautat1));
+ System.out.println("Maria Popa este in lista? " + verificaStudent(studenti, cautat2));
 }
+
+
+boolean verificaStudent(List<Student> lista, Student s) {
+ for (Student studentDinLista : lista) {
+
+  if (studentDinLista.prenume.equals(s.prenume) &&
+          studentDinLista.nume.equals(s.nume) &&
+          studentDinLista.formatiedestudiu.equals(s.formatiedestudiu)) {
+   return true;
+  }
+ }
+ return false;
+}
+
