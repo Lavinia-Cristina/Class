@@ -52,17 +52,36 @@ IO.println();
 
  Set<Integer> zSet = new TreeSet(); //b
  zSet.addAll(x);
- zSet.addAll(y);
+ zSet.retainAll(y);
 
- boolean containsElement = zSet.containsAll(x);
- if(containsElement)
- {IO.println(zSet);
 
- }
+ IO.println("Elemente comune (zSet): " + zSet);
  IO.println();
- IO.println();
+
+
+
 
  List<Integer> xMinusY = new ArrayList();//c
+
+ xMinusY.addAll(x);
+ xMinusY.removeAll(y);
+
+ IO.println("Elemente din x care nu sunt in y: " + xMinusY);
+ IO.println();
+
  int p = 4;
  List<Integer> xPlusYLimitedByP = new ArrayList(); //d
+ for (Integer val : xPlusY) {
+  if (val <= p) {
+   xPlusYLimitedByP.add(val);
+  }
+ }
+
+ IO.println("Elemente din x si y <= " + p + ": " + xPlusYLimitedByP);
+
+
+
+ //Partea Student
+
+
 }
