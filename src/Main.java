@@ -103,7 +103,7 @@ IO.println();
  System.out.println("Maria Popa este in lista? " + verificaStudent(studenti, cautat2));
 }
 
-//
+
 boolean verificaStudent(List<Student> lista, Student s) {
  for (Student studentDinLista : lista) {
 
