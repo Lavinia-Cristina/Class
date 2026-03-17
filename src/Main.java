@@ -99,20 +99,9 @@ IO.println();
  Student cautat2 = new Student(112, "Popa", "Maria", "TI21/1");
 
  System.out.println("Rezultate cautare:");
- System.out.println("Alis Popa este in lista? " + verificaStudent(studenti, cautat1));
- System.out.println("Maria Popa este in lista? " + verificaStudent(studenti, cautat2));
+ System.out.println("Alis Popa este in lista? " + studenti.contains( cautat1));
+ System.out.println("Maria Popa este in lista? " + studenti.contains( cautat1));
 }
 
 
-boolean verificaStudent(List<Student> lista, Student s) {
- for (Student studentDinLista : lista) {
-
-  if (studentDinLista.prenume.equals(s.prenume) &&
-          studentDinLista.nume.equals(s.nume) &&
-          studentDinLista.formatiedestudiu.equals(s.formatiedestudiu)) {
-   return true;
-  }
- }
- return false;
-}
-
+b
